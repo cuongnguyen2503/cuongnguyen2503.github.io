@@ -5,15 +5,16 @@
 	{% include head.html %}
 
 	<body>
-
+		
 		{% include nav.html %}
+		
+		<div class="container-fluid">
+			{{ content }}
 
-		{{ content }}
+			{% include footer.html %}
 
-		{% include footer.html %}
-
-		{% include bootstrap4_js.html %}
-
+			{% include bootstrap4_js.html %}
+		</div>
 	</body>
 
 </html>
