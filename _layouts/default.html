@@ -9,7 +9,15 @@
 		{% include nav.html %}
 		
 		<div class="container-fluid">
-			{{ content }}
+			<div class="row mt-3">
+				<div class="col-md-8">
+					{{ content }}
+				</div>
+
+				<div class="col-md-4">
+					{% include side_bar.html %}
+				</div>
+			</div>
 
 			{% include footer.html %}
 
